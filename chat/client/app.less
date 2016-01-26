@@ -64,14 +64,22 @@ a:hover {
 
 .home__title,
 .rooms__title {
+
   color: @accent-inverse !important;
-  background-color: @accent-color;
+  background-color: none!important;
   font-weight: bold;
   font-size: 22px;
   padding: @baseline / 2;
   margin-bottom: @baseline;
   display: inline-block;
   text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  top: 24px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 23px;
 }
 
 .rooms__title {

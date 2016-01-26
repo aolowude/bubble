@@ -18,11 +18,18 @@
   <div class="home__wrapper">
     <div class="home__centered">
       <div class="home__body">
-        <h1 class="home__title">streamy</h1>
+
+      
+{{#animate type="rubberBand" delay="200"}}
+      <div class="circleBase type1">
+        <h1 class="home__title">Bubble</h1>
+      </div>
+{{/animate}}
+
         <form>
-          <input type="text" id="nickname" class="home__nick" placeholder="Enter your nick and press Enter" />
+          <input type="text" id="nickname" class="home__nick" placeholder="Hi, what is your name?" />
         </form>
-        <p class="home__subtitle">This is a simple multi-rooms chat application to demonstrate how to use the <a href="https://github.com/YuukanOO/streamy" target="blank">streamy</a> meteor package for realtime non-persistent communications.</p>
+        <p class="home__subtitle">Quick & meaningful conversations</p>
       </div>
     </div>
   </div>
