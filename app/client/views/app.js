@@ -1,5 +1,10 @@
+Template.message.rendered = function() {
+	console.log("Rendered");
+	Streamy.broadcast('hello', { data: 'Message Text!' });
+
+};
+
 // Send a message to all connected sessions (Client & server)
-Streamy.broadcast('hello', { data: 'world!' });
 
 // Attach an handler for a specific message
 Streamy.on('hello', function(d, s) {
