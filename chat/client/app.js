@@ -101,17 +101,6 @@ Streamy.on('__leave__', function(data) {
   insertMessage(data.room.toLowerCase(), msg);
 });
 
-Template.NickChoice.events({
-  'submit': function(evt, tpl) {
-    if(evt.preventDefault) evt.preventDefault();
-
-    var val = tpl.$('#nickname').val();
-
-    if(val)
-      Streamy.emit('nick_set', { 'handle': val });
-  }
-});
-
 function resizeChatZone() {
   $('.chat__messages').css('height', $(window).outerHeight() - ($('.chat__input').outerHeight() * 1.5));
 }
